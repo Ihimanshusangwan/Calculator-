@@ -24,7 +24,7 @@ buttons.forEach(function(button) {
 //computing the input expression 
 function compute(str){
     for(let i =0;i<str.length;i++){
-    if(str[i]=="+" || str[i]=="-" || str[i]=='x' || str[i]=="/"){
+    if(str[i]=="+" || str[i]=="-" || str[i]=="*" || str[i]=="/"){
         var operand1 = parseFloat(str.slice(0,i));
         var operand2 = parseFloat(str.slice(i+1,));
         switch(str[i]){
@@ -34,7 +34,7 @@ function compute(str){
             case "-":    
                 ans.innerHTML = operand1 - operand2;
                 break;
-            case 'x':    
+            case "*":    
                 ans.innerHTML = operand1 * operand2;
                 break;
             case "/":    
