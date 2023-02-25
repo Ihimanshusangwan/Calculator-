@@ -35,7 +35,7 @@ function compute(str){
                 ans.innerHTML = operand1 - operand2;
                 break;
             case "X":    
-                ans.innerHTMLs = operand1 * operand2;
+                ans.innerHTML = operand1 * operand2;
                 break;
             case "/":    
                 ans.innerHTML = operand1 / operand2;
